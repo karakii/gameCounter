@@ -1,0 +1,76 @@
+
+<template name = "modalTiles">
+  <div class= "row text center">
+    <div class= "container-fluid text-center">
+      <div class= "col-xs-4 text-center">
+        <img class= "img-rounded img-responsive img-center" src= {{currentImg.[0]}}>
+        <div class= "description">
+          <div class= "line-item">Level: {{currentSetLevel.[0]}}</div>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{currentSource.[0]}}"
+                aria-valuemin="0" aria-valuemax="1" style="width:{{levelProgress.[0]}}%">
+                  <span>  {{currentSource.[0]}}/{{nextRequirement.[0]}} </span>
+              </div>
+          </div>
+
+        </div>
+      </div>
+      <div class= "col-xs-4 text-center">
+        <img class= "img-rounded img-responsive img-center" src= {{currentImg.[1]}}>
+        <div class= "description">
+          <div class= "line-item">Level: {{currentSetLevel.[1]}}</div>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{currentSource.[1]}}"
+                aria-valuemin="40" aria-valuemax="100" style="width:{{levelProgress.[1]}}% ">
+                    <span> {{currentSource.[1]}}/{{nextRequirement.[1]}} </span>
+              </div>
+          </div>
+        </div>
+      </div>
+  <!--    <div class="clearfix visible-xs-block visible-sm-block"></div> -->
+      <div class= "col-xs-4 text-center">
+        <img class= "img-rounded img-responsive img-center" src= {{currentImg.[2]}}>
+        <div class= "description">
+          <div class= "line-item">Level: {{currentSetLevel.[2]}}</div>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{currentSource.[2]}}"
+                aria-valuemin="0" aria-valuemax="1" style="width:{{levelProgress.[2]}}% ">
+                    <span> {{currentSource.[2]}}/{{nextReqValue.[2]}} </span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
+      <div class= "col-xs-4">
+        <img class= "img-rounded img-responsive img-center" src= {{currentImg.[3]}}>
+        <div class= "description">
+          <div class= "line-item">Level: {{currentSetLevel.[3]}}</div>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{currentSource.[3]}}"
+                aria-valuemin="0" aria-valuemax="1" style="width:{{levelProgress.[3]}}% ">
+                    <span> {{currentSource.[3]}}/{{nextRequirement.[3]}} </span>
+              </div>
+          </div>
+        </div>
+      </div>
+    <!--  <div class="clearfix visible-xs-block visible-sm-block"></div> -->
+      <div class= "col-xs-4">
+        <img class= "img-rounded img-responsive img-center" src= {{currentImg.[4]}}>
+        <div class= "description">
+          <div class= "line-item">Level: {{currentSetLevel.[4]}}</div>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{currentSource.[4]}}"
+                aria-valuemin="0" aria-valuemax="1" style="width:{{levelProgress.[4]}}% ">
+                  <span>  {{currentSource.[4]}}/{{nextRequirement.[4]}} </span> 
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class= "col-xs-4">
+        <img class= "img-rounded img-responsive img-center" src= "/Level_0.jpg">
+        <div class= "description">
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

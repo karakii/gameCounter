@@ -1,0 +1,50 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>GameCounter</title>
+</head>
+
+<body>
+
+  <div class= "row big-pad">
+    <div class= "container row-borders">
+      <div class= "col-sm-offset-8 col-sm-4 offset-xs-6 col-xs-6  line-border no-padding non-reactive" data-toggle="modal" data-target="#myModal">
+        <div class="col-xs-5 tiny-pad ">
+          <div class= "col-xs-12 tiny-pad">
+            <div style="padding: 5px"> Level  <span class="numberCircle"> {{currOverallLevel}} </span></div>
+          </div>
+          <div class= "col-xs-6 tiny-pad text-center">
+            <div class= "rounded-border tiny-pad" style="border: solid #666 1px">
+              <img style="height: 20px" src="/treat_icon.png"> {{currentBarks}} </div>
+          </div>
+          <div class= "col-xs-6 tiny-pad text-center">
+            <div class= "rounded-border tiny-pad" style="background: #00ACC1; color: white">
+              <img style="height:20px" src="/badges_icon.png"> {{currSumOfLevel}}</div>
+          </div>
+          <div class= "col-xs-12 tiny-pad text-center">
+            <div class= "rounded-border tiny-pad" style="border: solid #666 1px">
+              <img style="height:20px" src="/petpals_icon.png"> PETPALS {{currentPetPals}} </div>
+          </div>
+        </div>
+        <div class= "col-xs-7">
+          <img class= "img-scale img-rounded no-padding" src= "/mainBadge.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            {{> modalTiles}}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
